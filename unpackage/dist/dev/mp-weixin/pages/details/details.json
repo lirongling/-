@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "详情",
+  "usingComponents": {
+    "uni-rate": "/components/uni-rate/uni-rate",
+    "sx-rate": "/components/sx-rate/index"
+  }
+}

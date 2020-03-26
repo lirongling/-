@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "wheel": "/components/index/wheel",
+    "hot": "/components/index/hot",
+    "trailer": "/components/index/trailer",
+    "u-like": "/components/index/uLike",
+    "home-title": "/components/index/homeTitle"
+  }
+}

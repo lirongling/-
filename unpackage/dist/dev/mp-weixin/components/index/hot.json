@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "sx-rate": "/components/sx-rate/index",
+    "uni-rate": "/components/uni-rate/uni-rate"
+  },
+  "component": true
+}

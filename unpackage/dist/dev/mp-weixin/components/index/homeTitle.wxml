@@ -1,0 +1,1 @@
+<view class="data-v-6e2c1a22"><view class="title flex a-center data-v-6e2c1a22"><image style="height:auto;" lazy-load="true" mode="widthFix" src="{{iconPath}}" class="data-v-6e2c1a22"></image>{{''+title+''}}</view></view>
