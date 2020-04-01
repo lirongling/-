@@ -3,7 +3,7 @@
 		
 		<view class="content">
 			<scroll-view class="scroll-view_H" scroll-x="true" scroll-left="120">
-				<view v-for="(item,index) in hotList" :key="index" class="hot-item" @click="goDetails(item.id)">
+				<view v-for="(item,index) in hotList" :key="index" class="hot-item" @click="l(item.id)">
 					<image lazy-load="true" style="height: auto;" :src="item.cover" mode="widthFix"></image>
 					<view class="name ellipsis">{{item.name}}</view>
 					<view class="rate flex a-center j-between">

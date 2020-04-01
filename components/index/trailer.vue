@@ -1,11 +1,11 @@
 <template>
 	<view class="container flex a-center f-wrap">
-	
+
 		<view class="trailer-item flex a-center f-column" v-for="(item,index) in trailerList" :key="index">
 			<!-- <image :src="item.cover"></image>
 			<view class="initial"></view> -->
 			<view class="video-container">
-				<video   :id="getVideoId(index)" style="width:100%" @play="play(index)" :show-progress="true" objectFit="contain"
+				<video :id="getVideoId(index)" style="width:100%" @play="play(index)" :show-progress="true" objectFit="contain"
 				 :poster="item.cover" :src="item.trailer"></video>
 			</view>
 		</view>
@@ -26,7 +26,7 @@
 			}
 		},
 		methods: {
-			stop() { 
+			stop() {
 				console.log('222')
 				this.playVidio.pause()
 			},
@@ -38,12 +38,12 @@
 				let newVideo = uni.createVideoContext(a);
 				console.log(newVideo)
 				if (this.playVidio && this.playVidio.id !== newVideo.id) {
-				
+
 					newVideo.play()
 					this.playVidio.pause()
 				}
 				this.playVidio = newVideo
-				
+
 			},
 			getTrailer() {
 				uni.showLoading()
@@ -61,7 +61,7 @@
 
 						if (res.statusCode === 200) {
 							this.trailerList = res.data.data
-							
+
 						}
 					},
 					fail: () => {},
@@ -103,7 +103,7 @@
 
 			.video-container {
 				width: 93%;
-				
+
 				overflow: hidden;
 
 				/deep/.uni-video {
